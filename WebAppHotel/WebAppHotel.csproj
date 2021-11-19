@@ -1,0 +1,45 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <UserSecretsId>aspnet-WebAppHotel-13969271-FEB4-42BD-9A3E-8160BB5D0469</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="NovaPasta\**" />
+    <Compile Remove="Views\Apartamentos\**" />
+    <Compile Remove="Views\Funcionarios\**" />
+    <Compile Remove="Views\Reservas\**" />
+    <Compile Remove="Views\Servicos\**" />
+    <Compile Remove="Views\Shared\**" />
+    <Content Remove="NovaPasta\**" />
+    <Content Remove="Views\Apartamentos\**" />
+    <Content Remove="Views\Funcionarios\**" />
+    <Content Remove="Views\Reservas\**" />
+    <Content Remove="Views\Servicos\**" />
+    <Content Remove="Views\Shared\**" />
+    <EmbeddedResource Remove="NovaPasta\**" />
+    <EmbeddedResource Remove="Views\Apartamentos\**" />
+    <EmbeddedResource Remove="Views\Funcionarios\**" />
+    <EmbeddedResource Remove="Views\Reservas\**" />
+    <EmbeddedResource Remove="Views\Servicos\**" />
+    <EmbeddedResource Remove="Views\Shared\**" />
+    <None Remove="NovaPasta\**" />
+    <None Remove="Views\Apartamentos\**" />
+    <None Remove="Views\Funcionarios\**" />
+    <None Remove="Views\Reservas\**" />
+    <None Remove="Views\Servicos\**" />
+    <None Remove="Views\Shared\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.9" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Views\Shared-\" />
+  </ItemGroup>
+
+</Project>

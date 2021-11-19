@@ -1,0 +1,78 @@
+﻿@model WebAppHotel.Models.Funcionarios
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Funcionarios</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Nome)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Nome)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Sobrenome)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Sobrenome)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.WhatsApp)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.WhatsApp)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Email)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.cpf)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.cpf)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.rg)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.rg)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.DataNasc)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DataNasc)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.passaporte)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.passaporte)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.carteiraTRabalho)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.carteiraTRabalho)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.valorSalario)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.valorSalario)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

@@ -1,0 +1,63 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+typedef struct cliente_paciente_st
+{
+    char paciente[100];
+    char endereco[100];
+    int numero[5];
+    char bairro[100];
+    int cep[9];
+    char estado[2];
+    int telefone[10];
+    char email[100];
+    int cpf[12];
+    
+    
+} cliente_paciente_st;
+
+int main()
+{
+    
+    int opcao;
+    
+    do{
+       
+        printf("SYSTEM MEDICAL SERVICE \n");
+        printf("Selecione uma das seguintes opções:\n");
+        printf("1 - Cadastro\n");
+        printf("99 - Sair\n");
+        printf("Opção: ");
+        scanf("%d", &opcao);
+        
+        if( opcao == 1){
+       
+            cliente_paciente_st cp; 
+            printf("Paciente: ");
+            scanf("%s", cp.paciente);
+            printf("Endereco: ");
+            scanf("%s", cp.endereco);
+            printf("Numero: ");
+            scanf("%d", cp.numero);
+            printf("Bairro: ");
+            scanf("%s", cp.bairro);
+            printf("CEP: ");
+            scanf("%d", cp.cep);  
+            printf("Estado: ");
+            scanf("%s", cp.estado);
+            printf("Telefone: ");
+            scanf("%d", cp.telefone);
+            printf("Email: ");
+            scanf("%s", cp.email);
+            printf("CPF: ");
+            scanf("%d", cp.cpf);
+              
+            
+        }
+    
+        
+    } while(opcao != 99);
+   
+   printf("\nObrigado utilizar nosso Sistema ");
+   return(0);
+}
